@@ -74,14 +74,12 @@ wordcloud(d$word,d$freq,
           colors=brewer.pal(8, "Dark2"))
 ```
 
-![](MilestoneReport_files/figure-html/unnamed-chunk-13-1.png) 
+![](/unnamed-chunk-13-1.png) 
 
 
 # Building A Clean Text Corpus
 
 By using the [tm package](http://tm.r-forge.r-project.org/index.html) the sample data gets *cleaned*. With cleaning it is meant that the text data is converted into lower case, further punction, numbers and URLs are getting removed. Next to that stop and profanity words are erased from the text sample. At the end we are getting a clean text corpus which enables an easy subsequent processing.
-
-The used profanity words can be inspected [in this Github Repository](https://github.com/mhnierhoff/CapstoneCoursera/blob/master/MilestoneReport/profanityfilter.txt).
 
 
 ```r
